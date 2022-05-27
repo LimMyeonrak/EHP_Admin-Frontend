@@ -1,0 +1,176 @@
+// 해당 파일의 경우 BEM구조로 작성되어야 하며, 자주 사용하는 색과 스타일링은
+// _variables.scss 파일안에 변수 설정을 통한 스타일링을 해주셔야 합니다.
+// 자주 사용하는 animation효과가 있다면 _mixin을 통한 정의가 필요합니다,
+
+@import "./_variables.scss";
+
+// ui sample
+.aimmed__template {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 30px;
+  // UI 샘플
+  h2 {
+    font-size: 1.5rem;
+  }
+  &-item {
+    border: 1px solid $color-ddd;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    h3 {
+      font-size: 1.25rem;
+      margin: 0 0 20px;
+    }
+  }
+  // 대타이틀
+  &__title {
+    align-items: center;
+    display: flex;
+
+    h2 {
+      color: $color-bk;
+      display: inline-block;
+      font-size: 1.875rem;
+      margin: 0;
+    }
+    &-descicon {
+      color: $color-999;
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+  // 중타이틀
+  &__subtitle {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    &-txt {
+      span {
+        color: $color-rd;
+        font-size: 0.875rem;
+      }
+      h3 {
+        color: $color-bk;
+        font-size: 1.5rem;
+        margin: 10px 0 0;
+      }
+      p {
+        color: $color-444;
+        font-size: 0.9375rem;
+        margin: 0;
+      }
+    }
+    &-btn {
+      border: 1px solid $color-og;
+    }
+  }
+  // 입력폼
+  &__form {
+    border-bottom: 1px solid $color-444;
+    border-top: 1px solid $color-444;
+    margin-top: 15px;
+    padding: 10px 0;
+    .ant-row {
+      padding: 10px 0;
+    }
+    &-label {
+      color: $color-666;
+      font-size: 0.8125rem;
+      margin: 0 0 5px;
+    }
+    &-components {
+      .ant-select {
+        width: 100%;
+      }
+      .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+        align-items: center;
+        display: flex;
+        height: $height40;
+
+        @include input-hover;
+      }
+      .ant-picker {
+        height: $height40;
+
+        @include input-hover;
+      }
+      .ant-input,
+      .ant-input-search .ant-input {
+        height: $height40;
+
+        @include input-hover;
+      }
+      .ant-input-search-button {
+        height: $height40;
+        width: 35px;
+
+        @include input-hover;
+      }
+      .ant-radio-button-wrapper {
+        height: $height40;
+        line-height: 38px;
+      }
+    }
+  }
+  // 파일업로드
+  &__upload {
+    margin-top: 15px;
+    .ant-upload.ant-upload-drag {
+      border-radius: 20px;
+    }
+    .ant-upload-list {
+      margin: 5px -5px;
+      .ant-upload-list-text-container {
+        float: left;
+        padding: 5px;
+        width: 25%;
+        .ant-upload-list-item {
+          border: 1px dashed $color-ddd;
+          border-radius: 10px;
+          height: 50px;
+          margin: 0;
+          overflow: hidden;
+          .ant-upload-list-item-info {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  //
+  &__btnarea {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+}
+
+// ag grid custom
+.ag-grid-custom {
+  &__grid.ag-theme-balham {
+    height: 300px;
+    .ag-header {
+      background: $color-lg;
+      .ag-header-cell-text {
+        color: $color-bk;
+        font-size: 0.8125rem;
+        font-weight: 500;
+        // @include notosans($fwt:500);
+      }
+    }
+    .ag-cell {
+      align-items: center;
+      display: flex;
+      font-size: 0.8125rem;
+      font-weight: 300;
+      // @include notosans;
+    }
+  }
+  &__paging {
+    padding: 15px 0 0;
+    text-align: center;
+  }
+}

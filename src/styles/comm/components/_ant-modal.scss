@@ -1,0 +1,61 @@
+// 공통 모달 설정
+.ant-modal{
+    .ant-modal-header{
+        background: black;
+        .ant-modal-title{
+            color: white;
+            font-weight: bolder;
+        }
+    }
+    .ant-modal-close-x{             
+        color: white;
+    }
+}
+
+// 커스텀 네세지 모달 설정
+.confirm_modal{
+    .ant-modal-confirm-content{
+        margin: 22px 20px!important;
+    padding-top: 18px;
+    /* margin-left: 0px; */
+    text-align: center;
+    }
+    .ant-modal-close-x{
+        line-height: 30px;
+        width: 30px;
+        color: white;
+    }
+    .ant-modal-body{
+        padding: 0px 0px 0px 0px !important;
+        background: black;
+        .ant-modal-confirm-body{
+            margin-top: 32px;
+            background: #ffffff;
+            padding: 11px 0px 69px;
+            margin-bottom: -66px;
+            .anticon.anticon-info-circle {
+                display: none;
+            }
+            .anticon.anticon-exclamation-circle {
+                display: none;
+            }
+            
+            .ant-modal-confirm-title{
+                font-weight: bold;
+                margin-left: 10px;
+                position: absolute;
+                top: 5px;   
+                color: white;
+            }
+        }
+        .ant-modal-confirm-btns{
+            margin-right: 10px;
+        }
+    }
+}
+
+.footer_none {
+    .ant-modal-confirm-body{
+        padding: 11px 0px 1px!important;
+    }
+}

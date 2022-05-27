@@ -1,0 +1,36 @@
+// /* Upload */
+// .ant-upload.ant-upload-drag:not(.ant-upload-disabled):hover {
+//   border-color: $orange !important;
+// }
+// .ant-upload.ant-upload-drag p.ant-upload-drag-icon .anticon {
+//   color: $orange !important;
+// }
+.upload_item_inline{
+    display: inline-flex;
+    width: 100%;
+    height: none;
+    overflow-x: auto;
+    span {display: inline-flex;}
+    .ant-upload-list-item {
+        margin-top: 0px;
+    }
+    .ant-upload-list.ant-upload-list-text{
+        display: flex;
+    }
+    .ant-upload-list-item-name{
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 120px;
+        display: inline-block!important;
+    }
+    .ant-upload-list-item-info{
+        height: 32px!important;
+        border: 1px solid #E0E0E0;
+    }
+    .ant-upload-list-text-container{
+        height: 100%!important;
+    }
+    .ant-upload-list .ant-upload-list-text-container {
+        margin: 0 5px 0px 0!important;
+    }
+}

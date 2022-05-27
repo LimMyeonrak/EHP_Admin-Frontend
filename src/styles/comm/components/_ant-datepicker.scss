@@ -1,0 +1,28 @@
+// /* DatePicker */
+
+// .ant-picker-focused,
+// .ant-picker:hover {
+//   border-color: $orange !important;
+//   border-right-width: 1px;
+// }
+// .ant-picker-focused {
+//   box-shadow: $box-shadow-orange !important;
+//   outline: 0;
+// }
+// .ant-picker-today-btn {
+//   color: $orange !important;
+// }
+// .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner,
+// .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+// .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+//   background: $orange !important;
+// }
+// .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+//   border: 1px solid $orange !important;
+// }
+
+.ant-picker-clear {
+    .anticon-close-circle{
+        font-size: 18px !important;
+    }
+}
