@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/EHP_Admin-Frontend/static/css/main.a207553a.css",
-    "main.js": "/EHP_Admin-Frontend/static/js/main.d3c043ce.js",
+    "main.js": "/EHP_Admin-Frontend/static/js/main.35481a1f.js",
     "static/js/420.e817d88c.chunk.js": "/EHP_Admin-Frontend/static/js/420.e817d88c.chunk.js",
     "static/js/744.22f94b7b.chunk.js": "/EHP_Admin-Frontend/static/js/744.22f94b7b.chunk.js",
     "static/js/135.5dc4c06f.chunk.js": "/EHP_Admin-Frontend/static/js/135.5dc4c06f.chunk.js",
-    "static/js/115.6b726bb0.chunk.js": "/EHP_Admin-Frontend/static/js/115.6b726bb0.chunk.js",
+    "static/js/115.5fd2fcd8.chunk.js": "/EHP_Admin-Frontend/static/js/115.5fd2fcd8.chunk.js",
     "static/js/257.f301215d.chunk.js": "/EHP_Admin-Frontend/static/js/257.f301215d.chunk.js",
     "static/css/437.4833ca24.chunk.css": "/EHP_Admin-Frontend/static/css/437.4833ca24.chunk.css",
     "static/js/437.fd48d240.chunk.js": "/EHP_Admin-Frontend/static/js/437.fd48d240.chunk.js",
@@ -37,11 +37,11 @@
     "static/media/btn_slider_prev.svg": "/EHP_Admin-Frontend/static/media/btn_slider_prev.89a976751bc17491f150.svg",
     "static/media/btn_slider_next.svg": "/EHP_Admin-Frontend/static/media/btn_slider_next.6eb68f75988fc0e75dbf.svg",
     "main.a207553a.css.map": "/EHP_Admin-Frontend/static/css/main.a207553a.css.map",
-    "main.d3c043ce.js.map": "/EHP_Admin-Frontend/static/js/main.d3c043ce.js.map",
+    "main.35481a1f.js.map": "/EHP_Admin-Frontend/static/js/main.35481a1f.js.map",
     "420.e817d88c.chunk.js.map": "/EHP_Admin-Frontend/static/js/420.e817d88c.chunk.js.map",
     "744.22f94b7b.chunk.js.map": "/EHP_Admin-Frontend/static/js/744.22f94b7b.chunk.js.map",
     "135.5dc4c06f.chunk.js.map": "/EHP_Admin-Frontend/static/js/135.5dc4c06f.chunk.js.map",
-    "115.6b726bb0.chunk.js.map": "/EHP_Admin-Frontend/static/js/115.6b726bb0.chunk.js.map",
+    "115.5fd2fcd8.chunk.js.map": "/EHP_Admin-Frontend/static/js/115.5fd2fcd8.chunk.js.map",
     "257.f301215d.chunk.js.map": "/EHP_Admin-Frontend/static/js/257.f301215d.chunk.js.map",
     "437.4833ca24.chunk.css.map": "/EHP_Admin-Frontend/static/css/437.4833ca24.chunk.css.map",
     "437.fd48d240.chunk.js.map": "/EHP_Admin-Frontend/static/js/437.fd48d240.chunk.js.map",
@@ -54,6 +54,6 @@
   },
   "entrypoints": [
     "static/css/main.a207553a.css",
-    "static/js/main.d3c043ce.js"
+    "static/js/main.35481a1f.js"
   ]
 }
