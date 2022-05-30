@@ -13,6 +13,7 @@ import page403 from 'pages/exception/page403';
 import page404 from 'pages/exception/page404';
 import page500 from 'pages/exception/page500';
 import Login from 'pages/login';
+import DashBoard from 'pages/dashboard';
 import { IMenuItem } from './interface';
 
 import { COMPONENT_LIST } from './import-component';
@@ -68,7 +69,7 @@ const Router: React.FunctionComponent = () => {
                                                     <Switch location={location}>
                                                         <Route exact path="/error" component={page500} />
                                                         <Route exact path="/404" component={page404} />
-                                                        {/* <Route exact path="/dashboard" component={DashBoard} /> */}
+                                                        <Route exact path="/dashboard" component={DashBoard} />
                                                         {menuSubItemList &&
                                                             madeRouteList(menuSubItemList).map(route => {
                                                                 return (
@@ -81,7 +82,8 @@ const Router: React.FunctionComponent = () => {
                                                                 );
                                                             })}
                                                         {menuSubItemList.length > 0 && (
-                                                            <Route path="*" component={page404} />
+                                                            // <Route path="*" component={page404} />
+                                                            <Route path="*" component={DashBoard} />
                                                         )}
                                                         {/* <Route
                                                             exact

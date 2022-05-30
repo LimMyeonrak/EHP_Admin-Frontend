@@ -23,6 +23,94 @@ const FaqListContent: React.FunctionComponent = () => {
     const history = useHistory();
     const { setLoading } = useLoding();
 
+    const mockData = {
+        result: {
+            total: 5,
+            list: [
+                {
+                    answerIdx: 1,
+                    answerTitle: '답변1',
+                    articleAnswerReplyCnt: '0',
+                    articleIdx: 0,
+                    articleReplyCnt: 0,
+                    isConfirmFormat: 'N',
+                    isTopFixFormat: 'N',
+                    isUseFormat: 'N',
+                    noticeTargetCnt: '0',
+                    noticeTargetFormat: '0',
+                    noticeTargetNm: '0',
+                    number: 1,
+                    title: '질문1',
+                    content: '내용1'
+                },
+                {
+                    answerIdx: 2,
+                    answerTitle: '답변2',
+                    articleAnswerReplyCnt: '0',
+                    articleIdx: 0,
+                    articleReplyCnt: 0,
+                    isConfirmFormat: 'N',
+                    isTopFixFormat: 'N',
+                    isUseFormat: 'N',
+                    noticeTargetCnt: '0',
+                    noticeTargetFormat: '0',
+                    noticeTargetNm: '0',
+                    number: 2,
+                    title: '질문2',
+                    content: '내용2'
+                },
+                {
+                    answerIdx: 3,
+                    answerTitle: '답변3',
+                    articleAnswerReplyCnt: '0',
+                    articleIdx: 0,
+                    articleReplyCnt: 0,
+                    isConfirmFormat: 'N',
+                    isTopFixFormat: 'N',
+                    isUseFormat: 'N',
+                    noticeTargetCnt: '0',
+                    noticeTargetFormat: '0',
+                    noticeTargetNm: '0',
+                    number: 3,
+                    title: '질문3',
+                    content: '내용3'
+                },
+                {
+                    answerIdx: 4,
+                    answerTitle: '답변4',
+                    articleAnswerReplyCnt: '0',
+                    articleIdx: 0,
+                    articleReplyCnt: 0,
+                    isConfirmFormat: 'N',
+                    isTopFixFormat: 'N',
+                    isUseFormat: 'N',
+                    noticeTargetCnt: '0',
+                    noticeTargetFormat: '0',
+                    noticeTargetNm: '0',
+                    number: 4,
+                    title: '질문4',
+                    content: '내용4'
+                },
+                {
+                    answerIdx: 5,
+                    answerTitle: '답변5',
+                    articleAnswerReplyCnt: '0',
+                    articleIdx: 0,
+                    articleReplyCnt: 0,
+                    isConfirmFormat: 'N',
+                    isTopFixFormat: 'N',
+                    isUseFormat: 'N',
+                    noticeTargetCnt: '0',
+                    noticeTargetFormat: '0',
+                    noticeTargetNm: '0',
+                    number: 5,
+                    title: '질문5',
+                    content: '내용5'
+                }
+            ]
+        }
+    };
+
     const onChangePage = page => {
         setSearchParams({ ...searchParams, page: page });
         handleSearchData({ ...searchParams, page: page });
@@ -42,12 +130,13 @@ const FaqListContent: React.FunctionComponent = () => {
     };
 
     const handleSearchData = param => {
-        setLoading(
-            getNotices(param, data => {
-                setRowDatas(data?.result);
-                setTotal(data?.result.total);
-            })
-        );
+        setLoading();
+        // getNotices(param, data => {
+        //     setRowDatas(data?.result);
+        //     setTotal(data?.result.total);
+        // })
+        setRowDatas(mockData?.result);
+        setTotal(mockData?.result.total);
     };
     const moveAddPage = param => {
         history.push('/partner/faq/new');

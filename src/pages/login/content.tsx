@@ -51,10 +51,10 @@ const LoginContent: React.FunctionComponent = () => {
     };
 
     const onKeyPress = e => {
-        if(e.key == 'Enter') {
+        if (e.key == 'Enter') {
             onClickLogin();
         }
-    }
+    };
 
     const getCookie = cookieNm => {
         let x;
@@ -82,7 +82,7 @@ const LoginContent: React.FunctionComponent = () => {
                             <IconList name="icLogo" />
                         </div> */}
                     <div style={{ width: '444px', textAlign: 'center', marginBottom: '10px' }}>
-                        <img src="./img/footer_logo.png" alt=""  style={{width:'300px'}}/>
+                        <img src="./img/footer_logo.png" alt="" style={{ width: '300px' }} />
                     </div>
                     <div
                         style={{
@@ -107,7 +107,7 @@ const LoginContent: React.FunctionComponent = () => {
                             name="password"
                             rules={[{ required: true, message: '비밀번호를 입력해주세요' }]}
                             style={{ width: '100%', marginLeft: '0px' }}>
-                            <Input type="password" placeholder="비밀번호" onKeyPress={onKeyPress}/>
+                            <Input type="password" placeholder="비밀번호" onKeyPress={onKeyPress} />
                         </Form.Item>
                         <Button type="primary" style={{ width: '100%' }} onClick={onClickLogin}>
                             로그인
