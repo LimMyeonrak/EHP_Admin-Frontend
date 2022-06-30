@@ -66,6 +66,60 @@ const mockData = {
                 level: 0,
                 parentKey: '',
                 components: 'sample'
+            },
+            {
+                icon: null,
+                key: 'terms',
+                label: '서비스 이용 약관',
+                path: '/terms/new',
+                level: 0,
+                parentKey: '',
+                components: 'terms'
+            },
+            {
+                icon: null,
+                key: 'comCodeMgmt',
+                label: '공통코드 관리',
+                path: '/menu',
+                level: 0,
+                parentKey: '',
+                components: ''
+            },
+            {
+                icon: null,
+                key: 'comCode',
+                label: '공통코드',
+                path: '/commonCode/list',
+                level: 1,
+                parentKey: 'comCodeMgmt',
+                components: 'commonCodeGroupList'
+            },
+            {
+                icon: null,
+                key: 'popupMgmt',
+                label: '팝업관리',
+                path: '/menu',
+                level: 0,
+                parentKey: '',
+                components: ''
+            },
+            {
+                icon: null,
+                key: 'popupList',
+                label: '목록',
+                path: '/popup/list',
+                level: 1,
+                parentKey: 'popupMgmt',
+                components: 'popupList'
+            },
+            {
+                icon: null,
+                key: 'popupNew',
+                label: '등록',
+                path: '/popup/new',
+                level: 1,
+                parentKey: 'popupMgmt',
+                components: 'popupNew'
             }
         ]
     },

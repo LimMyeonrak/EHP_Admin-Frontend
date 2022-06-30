@@ -14,6 +14,8 @@ import page404 from 'pages/exception/page404';
 import page500 from 'pages/exception/page500';
 import Login from 'pages/login';
 import DashBoard from 'pages/dashboard';
+import HealthNew from 'pages/health/new';
+import PushNew from 'pages/push/new';
 import { IMenuItem } from './interface';
 
 import { COMPONENT_LIST } from './import-component';
@@ -69,6 +71,8 @@ const Router: React.FunctionComponent = () => {
                                                     <Switch location={location}>
                                                         <Route exact path="/error" component={page500} />
                                                         <Route exact path="/404" component={page404} />
+                                                        <Route exact path="/healthNew" component={HealthNew} />
+                                                        <Route exact path="/pushNew" component={PushNew} />
                                                         <Route exact path="/dashboard" component={DashBoard} />
                                                         {menuSubItemList &&
                                                             madeRouteList(menuSubItemList).map(route => {
